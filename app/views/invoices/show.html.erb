@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Company name:</strong>
+  <%= @invoice.company_name %>
+</p>
+
+<p>
+  <strong>Number of batches:</strong>
+  <%= @invoice.number_of_batches %>
+</p>
+
+<p>
+  <strong>Total amount:</strong>
+  <%= @invoice.total_amount %>
+</p>
+
+<p>
+  <strong>Quantity of packages:</strong>
+  <%= @invoice.quantity_of_packages %>
+</p>
+
+<p>
+  <strong>File:</strong>
+  <%= @invoice.file %>
+</p>
+
+<%= link_to 'Edit', edit_invoice_path(@invoice) %> |
+<%= link_to 'Back', invoices_path %>

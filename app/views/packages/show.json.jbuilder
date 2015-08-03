@@ -1,0 +1,1 @@
+json.extract! @package, :id, :name, :internal_comment, :allow_score, :allow_draft, :allow_critique, :allow_internal_edits, :turnover, :number_of_editors, :price, :add_on_price, :created_at, :updated_at

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Student name:</strong>
+  <%= @essay.student_name %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @essay.text %>
+</p>
+
+<p>
+  <strong>Revier one:</strong>
+  <%= @essay.revier_one %>
+</p>
+
+<p>
+  <strong>Reviewer two:</strong>
+  <%= @essay.reviewer_two %>
+</p>
+
+<%= link_to 'Edit', edit_essay_path(@essay) %> |
+<%= link_to 'Back', essays_path %>

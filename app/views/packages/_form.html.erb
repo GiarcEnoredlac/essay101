@@ -1,0 +1,57 @@
+<%= form_for(@package) do |f| %>
+  <% if @package.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@package.errors.count, "error") %> prohibited this package from being saved:</h2>
+
+      <ul>
+      <% @package.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :internal_comment %><br>
+    <%= f.text_area :internal_comment %>
+  </div>
+  <div class="field">
+    <%= f.label :allow_score %><br>
+    <%= f.check_box :allow_score %>
+  </div>
+  <div class="field">
+    <%= f.label :allow_draft %><br>
+    <%= f.check_box :allow_draft %>
+  </div>
+  <div class="field">
+    <%= f.label :allow_critique %><br>
+    <%= f.check_box :allow_critique %>
+  </div>
+  <div class="field">
+    <%= f.label :allow_internal_edits %><br>
+    <%= f.check_box :allow_internal_edits %>
+  </div>
+  <div class="field">
+    <%= f.label :turnover %><br>
+    <%= f.text_field :turnover %>
+  </div>
+  <div class="field">
+    <%= f.label :number_of_editors %><br>
+    <%= f.text_field :number_of_editors %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.number_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :add_on_price %><br>
+    <%= f.number_field :add_on_price %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @batch.company %>
+</p>
+
+<p>
+  <strong>Package:</strong>
+  <%= @batch.package %>
+</p>
+
+<p>
+  <strong>Test type:</strong>
+  <%= @batch.test_type %>
+</p>
+
+<p>
+  <strong>Component scores:</strong>
+  <%= @batch.component_scores %>
+</p>
+
+<p>
+  <strong>Instructor:</strong>
+  <%= @batch.instructor %>
+</p>
+
+<p>
+  <strong>Number of students:</strong>
+  <%= @batch.number_of_students %>
+</p>
+
+<p>
+  <strong>Essay file:</strong>
+  <%= @batch.essay_file %>
+</p>
+
+<p>
+  <strong>Complete:</strong>
+  <%= @batch.complete %>
+</p>
+
+<%= link_to 'Edit', edit_batch_path(@batch) %> |
+<%= link_to 'Back', batches_path %>

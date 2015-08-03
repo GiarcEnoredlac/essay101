@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  company: MyString
+  package: MyString
+  test_type: MyString
+  component_scores: false
+  instructor: MyString
+  number_of_students: 1
+  essay_file: MyString
+  complete: false
+
+two:
+  company: MyString
+  package: MyString
+  test_type: MyString
+  component_scores: false
+  instructor: MyString
+  number_of_students: 1
+  essay_file: MyString
+  complete: false

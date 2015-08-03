@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  internal_comment: MyText
+  allow_score: false
+  allow_draft: false
+  allow_critique: false
+  allow_internal_edits: false
+  turnover: MyString
+  number_of_editors: MyString
+  price: 1
+  add_on_price: 1
+
+two:
+  name: MyString
+  internal_comment: MyText
+  allow_score: false
+  allow_draft: false
+  allow_critique: false
+  allow_internal_edits: false
+  turnover: MyString
+  number_of_editors: MyString
+  price: 1
+  add_on_price: 1

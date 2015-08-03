@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @package.name %>
+</p>
+
+<p>
+  <strong>Internal comment:</strong>
+  <%= @package.internal_comment %>
+</p>
+
+<p>
+  <strong>Allow score:</strong>
+  <%= @package.allow_score %>
+</p>
+
+<p>
+  <strong>Allow draft:</strong>
+  <%= @package.allow_draft %>
+</p>
+
+<p>
+  <strong>Allow critique:</strong>
+  <%= @package.allow_critique %>
+</p>
+
+<p>
+  <strong>Allow internal edits:</strong>
+  <%= @package.allow_internal_edits %>
+</p>
+
+<p>
+  <strong>Turnover:</strong>
+  <%= @package.turnover %>
+</p>
+
+<p>
+  <strong>Number of editors:</strong>
+  <%= @package.number_of_editors %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @package.price %>
+</p>
+
+<p>
+  <strong>Add on price:</strong>
+  <%= @package.add_on_price %>
+</p>
+
+<%= link_to 'Edit', edit_package_path(@package) %> |
+<%= link_to 'Back', packages_path %>
